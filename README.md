@@ -174,8 +174,62 @@ Here's a view of the inside box :
 
 ![PCB mis en place](https://github.com/CamilleDouzet/beelieve_in_ourselves/blob/main/image/pcb_misenplace.jpg)
 
+
+
 ## How to deploy our project
-Guide d'utilisateur
+
+At the end of the realization, our project is composed of several elements:
+- A waterproof box containing the electronic card, the Sigfox module and the battery
+- A solar panel – photodiode assembly
+- The outdoor temperature and humidity sensor in its support
+- Temperature sensors inside the hive
+- The H-shaped weight sensor
+
+### Deployement
+
+To deploy our project, we must first install the internal temperature sensors in the hive as shown in this photo:
+
+<img src="https://github.com/CamilleDouzet/beelieve_in_ourselves/blob/main/image/Internal_sensor.jpeg" width=500>
+
+Then, you have to go up the upper part of the hive then place the weight sensor between it and the support while being careful not to pinch the cable:
+
+<img src="https://github.com/CamilleDouzet/beelieve_in_ourselves/blob/main/image/Weigth_sensor.JPG" width=500>
+
+Once the hive is placed on the weight sensor, the solar panel must be placed on the roof of the hive and preferably towards the south. Once this step has been completed, the cables must be routed correctly and the waterproof box containing the electronic card placed near to the weight sensor. This protects the box from heavy rain or other bad weather.
+
+<img src="https://github.com/CamilleDouzet/beelieve_in_ourselves/blob/main/image/Electronic_box.JPG" width=500>
+
+Finally, the outside temperature sensor can be fixed on one side of the hive using screws.
+
+### Start up
+
+Before switching on, allow the system battery to charge for at least one day.
+As soon as the battery is sufficiently charged, simply turn on the system by placing the switch, located on the side of the waterproof box, on “I”.
+
+At this time, the green LED located next to this switch will light up for 2 seconds. This confirms the correct initialization of the system. As soon as the LED goes out, the system acquires the first data and sends it to the visualization interface.
+The system is now autonomous and will perform a data acquisition every 12 minutes.
+
+### System shutdown
+
+In order to turn off this system, simply place the switch on the "0" position.
+This cuts the current from arriving on the board. On the other hand, the solar panel will continue to charge the battery even if the system is off.
+
+### Data observation
+
+In order to observe the data acquired by the various sensors placed around the hive, you must connect to the website: https://industrial.ubidots.com/accounts/signin/
+The identifiers are as follows:
+- ID: PolytechCamille
+- Password: Sigfox21#
+
+The dashboard page is displayed on which you will find all the information concerning the hive. You will find :
+- A real-time image of the battery level and the outside temperature.
+- A graph to observe the temperature and humidity outside.
+- A graph representing the internal temperature of the hive with the 3 sensors
+- A graph to observe the evolution of the weight of the hive
+- A graph representing the battery charge
+- A graph to see the sunshine.
+
+
 
 ## Some tests reports
 
