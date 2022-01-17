@@ -101,17 +101,21 @@ Here's a general diagram that describes how the sensors are connected to the Ard
 
 ### LPWAN Network choice
 
-In order to share the data with the beekeepers via a dashboards, we have decided to use LPWAN Sigfox; Low Power Wide Area Network.
-Low Power because its consumption is between 15 and 40mA during few seconds of the communication and only few µA while sleep mode.
-Wide Area Network because we cand send a several Km. To be more precise, it goes from 3 to 5 Km in the  countryside, 100 to 200 km by sea and 1,500 antennas to cover most of France. Not to mention, LPWAN helps alot to predict maintenance for example sending behavioural alert and it helps collecting information on how products work which are installed on uncontrolled sites.
+In order to share the data with the beekeepers via a dashboards, we have decided to use LPWAN Sigfox; Low Power Wide Area Network.\
+Low Power because its consumption is between 15 and 40mA during few seconds of the communication and only few µA while sleep mode.\
+Wide Area Network because we cand send a several Km. To be more precise, it goes from 3 to 5 Km in the  countryside, 100 to 200 km by sea and 1,500 antennas to cover most of France. Not to mention, LPWAN helps alot to predict maintenance for example sending behavioural alert and it helps collecting information on how products work which are installed on uncontrolled sites.\
 We have chosen Sigfox as it is a french company founded in 2009 by Ludovic Le Moan and Christophe Fourtet it is based in Toulouse, with offices in Paris, Madrid & San Francisco
-its fundraising is around €100 million in 2015 from Air Liquide, Eutelsat, Engie, NTT Docomo, Samsung, Telefonica, ...It also raised €150 million in 2016 from Salesforce, Total, Henri Seydoux, Alto Invest, Swen CP.
-Sigfox functions Operation indoors and outdoors, it is a bi-directional communication. To subscribe we only need to pay between €1 and €14/year/object. Also, it does not need a SIM card, does not need to be paired and it allows us to send 140 messages per day with a 12 bytes by message.
+its fundraising is around €100 million in 2015 from Air Liquide, Eutelsat, Engie, NTT Docomo, Samsung, Telefonica, ...It also raised €150 million in 2016 from Salesforce, Total, Henri Seydoux, Alto Invest, Swen CP.\
+Sigfox functions Operation indoors and outdoors, it is a bi-directional communication. To subscribe, we only need to pay between €1 and €14/year/object. Also, it does not need a SIM card, does not need to be paired and it allows us to send 140 messages per day with a 12 bytes by message.\
 
 
 ![Sigfox](https://github.com/CamilleDouzet/beelieve_in_ourselves/blob/main/image/Sigfox_logo.jpg)
 
 ### Iot platform choice
+
+We used Ubidots STEM dashboard for our IOT project, using chart widgets to collect and represent data delivered by the sensors.\
+Thanks to Ubidots, we had access real-time production data history. In addition, we can configure and activate conditional events and alerts via SMS, e-mail.\
+
 ![Ubidots](https://github.com/CamilleDouzet/beelieve_in_ourselves/blob/main/image/ubidots_logo.jpg)
 
 ### Microcontroller choice 
